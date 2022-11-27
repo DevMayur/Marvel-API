@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*******************************************************************Landing Page Styles*******************************************************************/
+
+.container {
+    flex: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.half-width-div {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.left-half {
+    float: left;
+}
+
+.get-started {
+    cursor: pointer;
+    width: 40%;
+    height: 40px;
+    text-align: right;
+    float: right;
+    margin-right: 5%;
+    margin-top: 25px;
+    text-align: center;
+    padding: 8px;
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    border: transparent;
+}
+
+.get-started:hover {
+    background-color: #06243b;
+}
+
+.get-started:active {
+    background-color: #031e22;
+}
+
+.get-started:visited {
+    background-color: #03171a;
+}
+
+.landing-page-title {
+    color: white;
+    float: right;
+    margin-top: 30%;
+    margin-right: 5%;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.landing-page-subtitle {
+    color: #cacaca;
+    width: 50%;
+    text-align: right;
+    float: right;
+    margin-right: 5%;
+}
+
+.line-blocker {
+    float: right;
+    width: 100%;
+    height: 1px;
+}
+
+.right-half {
+    float: right;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.horizontal-scroller {
+    margin-top: 30%;
+    overflow-x: auto;
+}
+
+.card-character {
+    padding: 12px;
+    background-color: wheat;
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+    width: 100px;
+    margin: 4px;
+    box-sizing: content-box;
+}
+
+.character-image {
+    width: 80px;
+}
+
+.focus-card {
+    width: 200px;
+    height: 200px;
+}
+
+.focus-image {
+    width: 180px;
+}
+
+/*******************************************************************Home Page Style*******************************************************************/
+
+.grid-container {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196f3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.input-search {
+    width: 100%;
+}

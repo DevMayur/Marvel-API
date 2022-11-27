@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+/* scrollbar */
+
+.section::-webkit-scrollbar {
+    width: 10px;
+}
+
+.section::-webkit-scrollbar-track {
+    background-color: rgb(15, 15, 15);
+}
+
+.section::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgb(1, 111, 255);
+}
+
+/* scrollbar end */
+html,
+body {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.leftContainer {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    color: white;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.537);
+}
+
+.rightContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
+    /* grid-template-rows: repeat(5, 1fr); */
+    gap: 20px;
+    width: 100%;
+    overflow: auto;
+    grid-auto-flow: row;
+    grid-auto-rows: 40%;
+    padding-right: 17px;
+    padding: 1rem;
+}
+
+.heading {
+    text-align: end;
+    margin: 40px;
+}
+
+.card {
+    background-color: rgba(255, 201, 244, 0.648);
+    min-height: auto;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Add some padding inside the card container */
+.card-container {
+    padding: 2px 16px;
+}
+
+.card-header {
+    display: inline-block;
+    width: 70%;
+}
+
+.character-card-img {
+    height: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.card-item {
+    height: 250px;
+    background-color: rgba(255, 201, 244, 0.648);
+    border-radius: 8%;
+}
+
+.card-item:hover {
+    height: 250px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.fav-button:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+.container {
+    display: block;
+}
+
+.main-image {
+    height: 200px;
+    display: inline-block;
+}
+
+.main-image-div {
+    display: inline-block;
+}
+
+.main-metadata {
+    display: inline-block;
+    padding-left: 12px;
+}
+
+.main-name {
+    display: block;
+}
+
+.date {
+    display: block;
+}
